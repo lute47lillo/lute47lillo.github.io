@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Project A",
+    "description": "One sentence summary of what this project is and why it matters.",
+    "links": {
+      "Code": "https://github.com/YOURUSERNAME/project-a",
+      "Write-up": "https://YOURUSERNAME.github.io/project-a"
+    }
+  },
+  {
+    "title": "Project B",
+    "description": "Another quick summary. Keep it short.",
+    "links": {
+      "Code": "https://github.com/YOURUSERNAME/project-b"
+    }
+  }
+]

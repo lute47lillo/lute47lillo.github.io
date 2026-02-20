@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Paper Title Goes Here",
+    "authors": ["Your Name", "Coauthor A", "Coauthor B"],
+    "venue": "Conference Name",
+    "year": 2026,
+    "type": "conference",
+    "tags": ["continual learning", "plasticity"],
+    "links": {
+      "pdf": "https://example.com/paper.pdf",
+      "code": "https://github.com/YOURUSERNAME/repo",
+      "arxiv": "https://arxiv.org/abs/xxxx.xxxxx"
+    }
+  },
+  {
+    "title": "A Preprint Example",
+    "authors": ["Your Name"],
+    "venue": "arXiv",
+    "year": 2025,
+    "type": "preprint",
+    "tags": ["representation learning"],
+    "links": {
+      "pdf": "https://example.com/preprint.pdf"
+    }
+  }
+]

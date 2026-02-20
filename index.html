@@ -1,1 +1,170 @@
-Hello World
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Researcher homepage" />
+  <title>Your Name — Research</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Your Name — Research" />
+  <meta property="og:description" content="Researcher homepage" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/headshot.jpg" />
+
+  <link rel="icon" href="assets/img/favicon.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Minimal schema.org Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Your Name",
+    "url": "https://YOURUSERNAME.github.io",
+    "sameAs": [
+      "https://scholar.google.com/...",
+      "https://github.com/YOURUSERNAME"
+    ],
+    "jobTitle": "PhD Student",
+    "affiliation": { "@type": "Organization", "name": "Your University" }
+  }
+  </script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Homepage">
+        <span class="brand-title">Your Name</span>
+        <span class="brand-subtitle">PhD Student · Your University</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <span class="theme-icon" aria-hidden="true">◐</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+    <!-- Hero -->
+    <section class="hero" id="about">
+      <div class="hero-left">
+        <img class="headshot" src="assets/img/headshot.jpg" alt="Headshot of Your Name" />
+      </div>
+
+      <div class="hero-right">
+        <h1>Your Name</h1>
+        <p class="lead">
+          I’m a <strong>PhD Student</strong> at <strong>Your University</strong> working on
+          <strong>your research area</strong>. My interests include continual learning, optimization,
+          and representation learning (edit this sentence).
+        </p>
+
+        <div class="quick-links" role="list">
+          <a role="listitem" class="pill" href="assets/docs/cv.pdf">CV</a>
+          <a role="listitem" class="pill" href="https://scholar.google.com/">Google Scholar</a>
+          <a role="listitem" class="pill" href="https://github.com/">GitHub</a>
+          <a role="listitem" class="pill" href="https://www.linkedin.com/">LinkedIn</a>
+          <a role="listitem" class="pill" href="https://twitter.com/">Twitter/X</a>
+          <a role="listitem" class="pill" href="mailto:you@university.edu">Email</a>
+        </div>
+
+        <div class="blurb">
+          <p>
+            <strong>Now:</strong> One sentence about what you’re currently focusing on.
+            <br />
+            <strong>Previously:</strong> One sentence about your background.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section class="section" id="publications">
+      <div class="section-header">
+        <h2>Publications</h2>
+        <div class="section-tools">
+          <input id="pubSearch" class="search" type="search" placeholder="Search publications…" />
+          <select id="pubFilter" class="select" aria-label="Filter publications">
+            <option value="all">All</option>
+            <option value="journal">Journal</option>
+            <option value="conference">Conference</option>
+            <option value="workshop">Workshop</option>
+            <option value="preprint">Preprint</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="pubList" class="list"></div>
+
+      <p class="muted small">
+        Tip: edit <code>assets/data/publications.json</code> to add papers.
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="section-header">
+        <h2>Projects</h2>
+      </div>
+      <div id="projectGrid" class="grid"></div>
+
+      <p class="muted small">
+        Tip: edit <code>assets/data/projects.json</code> to add projects.
+      </p>
+    </section>
+
+    <!-- News -->
+    <section class="section" id="news">
+      <div class="section-header">
+        <h2>News</h2>
+      </div>
+
+      <ul class="news">
+        <li><span class="date">2026-02</span> Put your latest update here.</li>
+        <li><span class="date">2026-01</span> Another update (talk, paper, award, release).</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="section-header">
+        <h2>Contact</h2>
+      </div>
+
+      <div class="contact">
+        <div>
+          <div class="label">Email</div>
+          <div><a href="mailto:you@university.edu">you@university.edu</a></div>
+        </div>
+        <div>
+          <div class="label">Office</div>
+          <div>Your building, room #</div>
+        </div>
+        <div>
+          <div class="label">Location</div>
+          <div>Your city / country</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="muted">© <span id="year"></span> Your Name</span>
+      <span class="muted small">Built with GitHub Pages.</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
