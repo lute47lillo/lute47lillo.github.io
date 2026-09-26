@@ -69,7 +69,7 @@ window.PUBLICATIONS = [
     title: "Solving Epistemic Logic Programs Using Generate-and-Test with Propagation",
     authors: ["Jorge Fandinno", "Lute Lillo"],
     venue: "AAAI Conference on Artificial Intelligence (AAAI 2025)",
-    note: "Conference paper",
+    note: "Oral presentation",
     type: "conference",
     topics: ["Knowledge Representation", "Epistemic Logic", "Answer Set Programming"],
     selected: false,
