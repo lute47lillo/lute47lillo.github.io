@@ -380,3 +380,31 @@ button, input { font: inherit; }
   *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* Publications page — mobile layout */
+@media (max-width: 720px) {
+
+  body[data-page="publications"] .page-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: start;
+  }
+
+  body[data-page="publications"] .page-hero h1 {
+    font-size: clamp(3.4rem, 15vw, 4.8rem);
+    white-space: normal;
+    line-height: 0.95;
+  }
+
+  body[data-page="publications"] .page-hero .lead {
+    max-width: 100%;
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  body[data-page="publications"] .page-hero {
+    padding-top: 3.5rem;
+    padding-bottom: 3rem;
+  }
+
+}
