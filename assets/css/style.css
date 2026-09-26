@@ -136,9 +136,10 @@ button, input { font: inherit; }
   margin: 0;
   font-family: var(--serif);
   font-weight: 500;
-  font-size: clamp(4.4rem, 10vw, 8.6rem);
-  letter-spacing: -.065em;
-  line-height: .8;
+  font-size: clamp(3.8rem, 8vw, 7.2rem);
+  letter-spacing: -.055em;
+  line-height: .9;
+  white-space: nowrap;
 }
 .hero-rule {
   width: min(560px, 90%);
@@ -149,8 +150,9 @@ button, input { font: inherit; }
   animation: rule-in 1s .1s cubic-bezier(.2,.7,.2,1) both;
 }
 .hero-role { margin: 0 0 1rem; font-size: .82rem; text-transform: uppercase; letter-spacing: .14em; color: var(--aegean); font-weight: 600; }
-.hero-tagline { margin: 0; font-family: var(--serif); font-size: clamp(1.75rem, 3.2vw, 2.85rem); line-height: 1.04; max-width: 760px; }
 .hero-copy { margin: 1.4rem 0 0; max-width: 650px; color: #57534d; font-size: 1.02rem; }
+.hero-research-summary {max-width: 760px; line-height: 1.75;}
+.hero-research-summary strong {font-weight: 600; color: var(--aegean);}
 .hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
 .button {
   display: inline-flex;
@@ -324,7 +326,7 @@ button, input { font: inherit; }
   }
   .site-nav.is-open { display: flex; }
   .site-nav a { width: 100%; padding: .55rem 0; }
-  .hero h1 { font-size: clamp(4.2rem, 23vw, 6.8rem); }
+  .hero h1 {font-size: clamp(3.5rem, 15vw, 5.5rem);}
   .hero-art-note { display: none; }
   .publication, .publication--compact, .research-theme, .timeline-item, .cv-entry { grid-template-columns: 1fr; gap: .7rem; }
   .pub-year { padding: 0; }
