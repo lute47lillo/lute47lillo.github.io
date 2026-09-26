@@ -170,7 +170,37 @@ button, input { font: inherit; }
 .button--quiet { border-color: var(--line); }
 .hero-art { position: relative; }
 .hero-art img {width: 100%; display: block;}
-.hero-portrait img {aspect-ratio: 4 / 5; object-fit: cover; object-position: center;}
+.hero-portrait {
+  padding: 10px;
+  border: 1px solid rgba(23, 54, 79, 0.22);
+  background: rgba(255, 253, 248, 0.45);
+}
+
+.hero-portrait img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center;
+}
+.hero-portrait {
+  position: relative;
+}
+
+.hero-portrait::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  bottom: -1px;
+  width: 38%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--terracotta),
+    var(--aegean)
+  );
+}
+
 .hero-art-note { display: flex; justify-content: space-between; gap: 1rem; margin-top: .8rem; color: var(--muted); font-size: .72rem; letter-spacing: .04em; }
 @keyframes rule-in { from { transform: scaleX(0); opacity: .3; } to { transform: scaleX(1); opacity: 1; } }
 
