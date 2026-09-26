@@ -1,170 +1,98 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Researcher homepage" />
-  <title>Your Name — Research</title>
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Your Name — Research" />
-  <meta property="og:description" content="Researcher homepage" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/img/headshot.jpg" />
-
-  <link rel="icon" href="assets/img/favicon.png" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-
-  <!-- Minimal schema.org Person -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Your Name",
-    "url": "https://YOURUSERNAME.github.io",
-    "sameAs": [
-      "https://scholar.google.com/...",
-      "https://github.com/YOURUSERNAME"
-    ],
-    "jobTitle": "PhD Student",
-    "affiliation": { "@type": "Organization", "name": "Your University" }
-  }
-  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lute Lillo — PhD researcher in computer science working on continual learning, reinforcement learning, structural plasticity, and adaptive intelligence.">
+  <title>Lute Lillo — Researcher</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<body data-page="home">
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Lute Lillo home"><span class="brand-mark">L</span><span class="brand-text">Lute Lillo</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="research.html" data-nav="research">Research</a>
+      <a href="publications.html" data-nav="publications">Publications</a>
+      <a href="about.html" data-nav="about">About</a>
+      <a href="cv.html" data-nav="cv">CV</a>
+      <a href="contact.html" data-nav="contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Homepage">
-        <span class="brand-title">Your Name</span>
-        <span class="brand-subtitle">PhD Student · Your University</span>
-      </a>
-
-      <nav class="nav" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#publications">Publications</a>
-        <a href="#projects">Projects</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
-        <span class="theme-icon" aria-hidden="true">◐</span>
-      </button>
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="hero-role">PhD Researcher · Computer Science · University of Vermont</p>
+        <h1>Lute<br>Lillo</h1>
+        <div class="hero-rule" aria-hidden="true"></div>
+        <p class="hero-tagline">Learning systems for worlds that do not stand still.</p>
+        <p class="hero-copy">I study continual learning, reinforcement learning, and adaptive representations, with a particular interest in how learning systems can preserve their ability to change as they accumulate experience.</p>
+        <div class="hero-actions">
+          <a class="button" href="publications.html">View publications <span>↗</span></a>
+          <a class="button button--quiet" href="research.html">Research</a>
+        </div>
+      </div>
+      <div class="hero-art reveal">
+        <img src="assets/img/mediterranean-mark.svg" alt="Abstract Mediterranean horizon with arch, sun, mountain, and sea">
+        <div class="hero-art-note"><span>Continual learning · Reinforcement learning</span><span>Vermont / Mediterranean</span></div>
+      </div>
     </div>
-  </header>
+  </section>
 
-  <main id="top" class="container">
-    <!-- Hero -->
-    <section class="hero" id="about">
-      <div class="hero-left">
-        <img class="headshot" src="assets/img/headshot.jpg" alt="Headshot of Your Name" />
+  <section class="section">
+    <div class="container">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">Research</p><h2 class="section-title">What I work on</h2></div>
+        <p class="lead">My research asks how artificial agents can remain adaptable over long horizons — not only retaining what they have learned, but preserving the capacity to learn what comes next.</p>
       </div>
-
-      <div class="hero-right">
-        <h1>Your Name</h1>
-        <p class="lead">
-          I’m a <strong>PhD Student</strong> at <strong>Your University</strong> working on
-          <strong>your research area</strong>. My interests include continual learning, optimization,
-          and representation learning (edit this sentence).
-        </p>
-
-        <div class="quick-links" role="list">
-          <a role="listitem" class="pill" href="assets/docs/cv.pdf">CV</a>
-          <a role="listitem" class="pill" href="https://scholar.google.com/">Google Scholar</a>
-          <a role="listitem" class="pill" href="https://github.com/">GitHub</a>
-          <a role="listitem" class="pill" href="https://www.linkedin.com/">LinkedIn</a>
-          <a role="listitem" class="pill" href="https://twitter.com/">Twitter/X</a>
-          <a role="listitem" class="pill" href="mailto:you@university.edu">Email</a>
-        </div>
-
-        <div class="blurb">
-          <p>
-            <strong>Now:</strong> One sentence about what you’re currently focusing on.
-            <br />
-            <strong>Previously:</strong> One sentence about your background.
-          </p>
-        </div>
+      <div class="research-grid reveal">
+        <article class="research-card"><span class="research-number">01</span><h3>Continual<br>adaptation</h3><p>Understanding and mitigating loss of plasticity as neural systems accumulate experience under changing data and task distributions.</p></article>
+        <article class="research-card"><span class="research-number">02</span><h3>Adaptive decision<br>making</h3><p>Studying reinforcement-learning agents in environments whose dynamics, tasks, and useful behaviors can shift over time.</p></article>
+        <article class="research-card"><span class="research-number">03</span><h3>Diversity as<br>a resource</h3><p>Exploring whether policy repertoires, structural variation, and learned behavior spaces can improve future adaptation and recovery.</p></article>
       </div>
-    </section>
-
-    <!-- Publications -->
-    <section class="section" id="publications">
-      <div class="section-header">
-        <h2>Publications</h2>
-        <div class="section-tools">
-          <input id="pubSearch" class="search" type="search" placeholder="Search publications…" />
-          <select id="pubFilter" class="select" aria-label="Filter publications">
-            <option value="all">All</option>
-            <option value="journal">Journal</option>
-            <option value="conference">Conference</option>
-            <option value="workshop">Workshop</option>
-            <option value="preprint">Preprint</option>
-          </select>
-        </div>
-      </div>
-
-      <div id="pubList" class="list"></div>
-
-      <p class="muted small">
-        Tip: edit <code>assets/data/publications.json</code> to add papers.
-      </p>
-    </section>
-
-    <!-- Projects -->
-    <section class="section" id="projects">
-      <div class="section-header">
-        <h2>Projects</h2>
-      </div>
-      <div id="projectGrid" class="grid"></div>
-
-      <p class="muted small">
-        Tip: edit <code>assets/data/projects.json</code> to add projects.
-      </p>
-    </section>
-
-    <!-- News -->
-    <section class="section" id="news">
-      <div class="section-header">
-        <h2>News</h2>
-      </div>
-
-      <ul class="news">
-        <li><span class="date">2026-02</span> Put your latest update here.</li>
-        <li><span class="date">2026-01</span> Another update (talk, paper, award, release).</li>
-      </ul>
-    </section>
-
-    <!-- Contact -->
-    <section class="section" id="contact">
-      <div class="section-header">
-        <h2>Contact</h2>
-      </div>
-
-      <div class="contact">
-        <div>
-          <div class="label">Email</div>
-          <div><a href="mailto:you@university.edu">you@university.edu</a></div>
-        </div>
-        <div>
-          <div class="label">Office</div>
-          <div>Your building, room #</div>
-        </div>
-        <div>
-          <div class="label">Location</div>
-          <div>Your city / country</div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <span class="muted">© <span id="year"></span> Your Name</span>
-      <span class="muted small">Built with GitHub Pages.</span>
     </div>
-  </footer>
+  </section>
 
-  <script src="assets/js/main.js"></script>
+  <section class="section question-band">
+    <div class="container question-wrap reveal">
+      <div><p class="eyebrow">A question I keep returning to</p></div>
+      <p class="question-text">How can we optimize not only what a system knows <em>now</em>, but what it will remain capable of learning <em>later</em>?</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">Selected work</p><h2 class="section-title">Publications</h2></div>
+        <div><p class="lead">Recent work spans continual learning, structural plasticity, and continual reinforcement learning.</p><p><a class="pub-link" href="publications.html">All publications →</a></p></div>
+      </div>
+      <div class="publications-list reveal" data-selected-publications></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="narrow prose reveal">
+      <p class="eyebrow">Elsewhere</p>
+      <h2>Research should remain connected to the systems we actually build.</h2>
+      <p class="lead">I am interested in first-principles questions about learning and adaptation, but I also care about empirical mechanisms: what breaks, why it breaks, and what interventions actually change the behavior of a learning system.</p>
+      <div class="hero-actions"><a class="button" href="about.html">About me</a><a class="button button--quiet" href="contact.html">Get in touch</a></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div><div class="footer-name">Lute Lillo</div><div class="footer-small">PhD Researcher · University of Vermont · © <span data-year-now></span></div></div>
+    <div class="footer-links"><a href="https://scholar.google.com/citations?user=jO0CHngAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a><a href="https://github.com/lute47lillo" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/lute47lillo/" target="_blank" rel="noreferrer">LinkedIn</a><a href="mailto:elillopo@uvm.edu">Email</a></div>
+  </div>
+</footer>
+<script src="assets/js/publications-data.js"></script>
+<script src="assets/js/publications-render.js"></script>
+<script src="assets/js/site.js"></script>
 </body>
 </html>

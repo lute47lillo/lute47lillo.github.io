@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 430" role="img" aria-label="Abstract Mediterranean horizon">
+  <rect width="720" height="430" rx="36" fill="#efe7da"/>
+  <circle cx="555" cy="105" r="47" fill="#c66b49"/>
+  <path d="M0 283h720" stroke="#183650" stroke-width="2" opacity=".5"/>
+  <path d="M0 314c55-22 93-22 148 0s94 22 149 0 94-22 149 0 94 22 149 0 70-18 125-4" fill="none" stroke="#6d94a9" stroke-width="4"/>
+  <path d="M0 333c48-16 89-16 137 0s89 16 137 0 89-16 137 0 89 16 137 0 91-17 172-2" fill="none" stroke="#6d94a9" stroke-width="2" opacity=".75"/>
+  <path d="M85 283V170c0-52 42-94 94-94s94 42 94 94v113" fill="none" stroke="#183650" stroke-width="5"/>
+  <path d="M128 283V171c0-29 23-52 51-52s51 23 51 52v112" fill="#f8f4ec" stroke="#183650" stroke-width="3"/>
+  <path d="M337 283l73-99 73 99" fill="none" stroke="#b68155" stroke-width="5"/>
+  <path d="M361 283l49-67 49 67" fill="none" stroke="#b68155" stroke-width="2" opacity=".8"/>
+</svg>
