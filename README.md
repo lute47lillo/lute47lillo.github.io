@@ -1,84 +1,33 @@
-# lute47lillo.github.io
+# Lute Lillo
 
-# Researcher Homepage (GitHub Pages)
+Personal academic website and research homepage.
 
-This is a simple single-page researcher website.
+I am a PhD student in Computer Science at the University of Vermont, working in the Neurobotics Lab with Nick Cheney. My research broadly focuses on **lifelong learning**, **future learnability**, and **continual reinforcement learning**.
 
-## Edit your info
-- `index.html`: name# Lute Lillo — Academic Website
+I am interested in how learning systems change over long learning trajectories: why they forget, why they lose plasticity, how they can preserve the capacity to learn in the future, and how these questions extend to agents interacting continually with changing environments.
 
-A no-build, static academic website designed for GitHub Pages. The visual system uses warm limestone, terracotta, olive, and Aegean blue, with editorial serif typography and restrained Mediterranean geometry.
+## Research
 
-## Deploy on GitHub Pages
+My current work centers around three related themes:
 
-1. Copy the contents of this folder into the root of your `lute47lillo.github.io` repository.
-2. Commit and push to the default branch (`main`).
-3. In GitHub: **Settings → Pages → Build and deployment → Deploy from a branch**.
-4. Select `main` and `/ (root)`.
-5. Your site should appear at `https://lute47lillo.github.io/`.
+- **Lifelong Learning** — understanding forgetting, interference, and loss of plasticity as learning systems accumulate experience.
+- **Future Learnability** — studying how optimization, representations, architecture, and learning dynamics shape a system's ability to continue learning.
+- **Continual Reinforcement Learning** — investigating adaptive agents that must retain, revise, reuse, and expand knowledge while interacting with non-stationary environments.
 
-No npm, Jekyll, or build step is required.
+## Links
 
-## Files you will edit most often
+- [Website](https://lute47lillo.github.io/)
+- [Google Scholar](https://scholar.google.com/citations?user=jO0CHngAAAAJ&hl=en)
+- [GitHub](https://github.com/lute47lillo)
+- [LinkedIn](https://www.linkedin.com/in/lute47lillo/)
+- [ORCID](https://orcid.org/0009-0003-7604-7032)
+- [UVM Neurobotics Lab](https://www.uvm.edu/neurobotics/)
 
-- `index.html` — homepage copy.
-- `research.html` — research themes and research statement.
-- `about.html` — biography.
-- `cv.html` — compact web CV.
-- `contact.html` — contact information.
-- `assets/js/publications-data.js` — **single source of truth for publications**.
-- `assets/css/style.css` — colors, type, spacing, and all visual styling.
+## Contact
 
-## Add a publication
+**Lute Lillo**  
+PhD Student, Computer Science  
+University of Vermont  
+Neurobotics Lab  
 
-Open `assets/js/publications-data.js` and add another object to `window.PUBLICATIONS`.
-
-If `selected: true`, it can appear on the homepage. The full list is automatically rendered on `publications.html`.
-
-## Change the Mediterranean palette
-
-At the top of `assets/css/style.css`, edit:
-
-```css
---paper: #f5f0e8;
---aegean: #17364f;
---terracotta: #bc6345;
---olive: #6f795e;
---sand: #b98d62;
-```
-
-The terracotta-to-Aegean rule under the name is `.hero-rule`.
-
-## Add a portrait
-
-The current design intentionally uses an abstract Mediterranean illustration instead of requiring a portrait. If you want one, place the image in `assets/img/` and replace the `<img>` inside `.hero-art` in `index.html`. The monogram block on `about.html` can be replaced similarly.
-
-## PDF CV
-
-Put your PDF in `assets/files/`, then add a link to it. See `assets/files/README.md`.
-
-## Custom domain
-
-If you later use `lutelillo.com`, create a file named `CNAME` in the repository root containing only:
-
-```text
-lutelillo.com
-```
-
-Then configure the DNS records following GitHub Pages' custom-domain instructions.
-
-## Notes
-
-- The Google Fonts import uses Cormorant Garamond + Inter. The CSS includes system fallbacks.
-- Mobile navigation and publication filtering are handled by small vanilla JavaScript files.
-- The publication BibTeX buttons copy citations to the clipboard.
-- The site respects `prefers-reduced-motion`.
-, affiliation, links, about text, contact info
-- `assets/data/publications.json`: add publications
-- `assets/data/projects.json`: add projects
-- `assets/img/headshot.jpg`: add your headshot
-- `assets/docs/cv.pdf`: add your CV
-
-## Publish
-If your repo is named `YOURUSERNAME.github.io`, GitHub will publish automatically at:
-https://YOURUSERNAME.github.io
+Email: [elillopo@uvm.edu](mailto:elillopo@uvm.edu)
