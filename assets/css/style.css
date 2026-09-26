@@ -41,6 +41,21 @@ body::before {
   mix-blend-mode: multiply;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.92' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.055'/%3E%3C/svg%3E");
 }
+
+body[data-page="publications"] .page-hero-grid {
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 2.5rem;
+}
+
+body[data-page="publications"] .page-hero h1 {
+  font-size: clamp(3.8rem, 7vw, 6.2rem);
+  white-space: nowrap;
+}
+
+body[data-page="publications"] .page-hero .lead {
+  max-width: 520px;
+}
+
 a { color: inherit; }
 img { max-width: 100%; display: block; }
 button, input { font: inherit; }
@@ -168,8 +183,15 @@ button, input { font: inherit; }
 }
 .button:hover { transform: translateY(-2px); background: var(--aegean); color: var(--white); border-color: var(--aegean); }
 .button--quiet { border-color: var(--line); }
-.hero-art { position: relative; }
-.hero-art img {width: 100%; display: block;}
+.hero-art {
+  position: relative;
+}
+
+.hero-art img {
+  width: 100%;
+  display: block;
+}
+
 .hero-portrait {
   padding: 10px;
   border: 1px solid rgba(23, 54, 79, 0.22);
@@ -182,9 +204,6 @@ button, input { font: inherit; }
   aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: center;
-}
-.hero-portrait {
-  position: relative;
 }
 
 .hero-portrait::after {
